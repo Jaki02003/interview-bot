@@ -36,26 +36,26 @@ export function ChatPanel({
 
   const exampleMessages = [
     {
-      heading: 'Could you please provide more details',
-      subheading: ' about the day-to-day responsibilities of this role?',
-      message: 'Could you please provide more details about the day-to-day responsibilities of this role?'
+      heading: 'Ready to dive into',
+      subheading: ' JavaScript for the interview',
+      message: 'Ready to dive into JavaScript for the interview'
     },
     {
-      heading: 'What qualities are you looking',
-      subheading: ' for in an ideal candidate for this position?',
-      message: 'What qualities are you looking for in an ideal candidate for this position?'
+      heading: 'Set for a',
+      subheading: ' Golang interview adventure',
+      message: 'Set for a Golang interview adventure'
     },
     {
-      heading: 'Can you tell me more about',
-      subheading: 'the team I would be working with?',
-      message: 'Can you tell me more about the team I would be working with?'
+      heading: 'Ready to tackle',
+      subheading: ' C# in the interview',
+      message: 'Ready to tackle C# in the interview'
     },
     {
-      heading: 'What opportunities are there for',
-      subheading: 'professional development and growth within the company?',
-      message: 'What opportunities are there for professional development and growth within the company?'
+      heading: 'Eager to discover',
+      subheading: ' Python in the interview',
+      message: 'Eager to discover Python in the interview'
     }
-  ];
+  ]
   
   
 
