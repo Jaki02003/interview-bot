@@ -157,21 +157,27 @@ async function submitUserMessage(content: string) {
 
         Examples:
         - Software Development:
-          1. Implementing a RESTful API in Python using Flask.
-          2. Developing a web application using React.js and Node.js.
-          3. Building a mobile app with cross-platform compatibility using Flutter.
+          1. Design a RESTful API in Python using Flask that efficiently handles concurrent requests while minimizing response times and resource usage.
+          2. Develop a web application using React.js and Node.js that implements lazy loading techniques to optimize initial page load and enhance user experience.
+          3. Build a mobile app with cross-platform compatibility using Flutter, focusing on responsive design principles to ensure consistent performance across devices.
 
         - Problem-Solving:
-          1. Finding the shortest path in a graph using Dijkstra's algorithm.
-          2. Optimizing database queries to improve application performance.
-          3. Resolving a deadlock situation in concurrent programming using synchronization techniques.
+          1. Given a complex network topology, devise an algorithm to find the most efficient route using Dijkstra's algorithm while considering factors such as bandwidth and latency.
+          2. Optimize database queries for an e-commerce platform to improve search performance and reduce server load during peak traffic periods.
+          3. Identify and mitigate potential security vulnerabilities in a web application by implementing secure coding practices and conducting penetration testing.
           4. Implement a function to reverse a linked list in JavaScript.
 
         - Product Management:
-          1. Conducting user interviews to gather feedback for a new feature.
-          2. Creating a product roadmap based on market analysis and user feedback.
+          1. Conduct user interviews to gather feedback on a new feature, prioritizing insights that align with the product vision and user needs while identifying opportunities for innovation.
+          2. Create a product roadmap based on market analysis and user feedback, emphasizing iterative development cycles and continuous improvement to deliver value to customers.
+          3. Analyze competitor products and market trends to identify potential gaps and opportunities for differentiation, informing strategic decisions for product development and positioning.
       
-        Guidance:
+        - Technical Aptitude:
+          1. Demonstrate proficiency in version control using Git and GitHub, showcasing knowledge of branching strategies and collaboration workflows.
+          2. Implement a CI/CD pipeline for a software project, automating testing and deployment processes to ensure code quality and reliability.
+          3. Troubleshoot and resolve performance issues in a production environment, utilizing monitoring tools and diagnostic techniques to identify root causes and implement solutions.
+        
+          Guidance:
         - Start the conversation asking a question.
         - be funny and quirky.
         - Don't allow user questions at first.
