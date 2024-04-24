@@ -47,8 +47,8 @@ export function ChatPanel({
     },
     {
       heading: 'Ready to tackle',
-      subheading: ' C# in the interview',
-      message: 'Ready to tackle C# in the interview'
+      subheading: ' Product management in the interview',
+      message: 'Ready to tackle Product management in the interview'
     },
     {
       heading: 'Eager to discover',
