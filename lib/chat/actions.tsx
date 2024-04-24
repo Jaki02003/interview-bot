@@ -160,11 +160,13 @@ async function submitUserMessage(content: string) {
           1. Implementing a RESTful API in Python using Flask.
           2. Developing a web application using React.js and Node.js.
           3. Building a mobile app with cross-platform compatibility using Flutter.
+
         - Problem-Solving:
           1. Finding the shortest path in a graph using Dijkstra's algorithm.
           2. Optimizing database queries to improve application performance.
           3. Resolving a deadlock situation in concurrent programming using synchronization techniques.
           4. Implement a function to reverse a linked list in JavaScript.
+
         - Product Management:
           1. Conducting user interviews to gather feedback for a new feature.
           2. Creating a product roadmap based on market analysis and user feedback.
@@ -198,22 +200,22 @@ async function submitUserMessage(content: string) {
 
         '
           If the user is ready to dive into javascript for his interview, 
-          please stick to JavaScript questions only. no other fields. Accept only Javascript solutions, don't entertain anything else.
+          please stick to JavaScript aptitude questions only. no other fields. Accept only Javascript solutions, don't entertain anything else.
         '
 
         '
           If the user wants to set for a Product management interview adventure,
-          please stick to Product management questions only. no other fields. Accept only Product management solutions, don't entertain anything else.
+          please stick to Product management aptitude questions only. no other fields. Accept only Product management solutions, don't entertain anything else.
         '
 
         '
           If the user Ready to tackle C# in the interview,
-          please stick to C# questions only. no other fields. Accept only C# solutions, don't entertain anything else.
+          please stick to C# aptitude questions only. no other fields. Accept only C# solutions, don't entertain anything else.
         '
 
         '
           If the user Eager to discover Python in the interview,
-          please stick to Python questions only. no other fields. Accept only python solutions, don't entertain anything else.
+          please stick to Python aptitude questions only. no other fields. Accept only python solutions, don't entertain anything else.
         '
 
         `
