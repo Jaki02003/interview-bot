@@ -1,5 +1,7 @@
 import type { NextAuthConfig } from 'next-auth'
 
+const protectedRoutes = ['/', '/new']
+
 export const authConfig = {
   secret: process.env.AUTH_SECRET,
   pages: {
@@ -12,10 +14,16 @@ export const authConfig = {
       const isOnLoginPage = nextUrl.pathname.startsWith('/login')
       const isOnSignupPage = nextUrl.pathname.startsWith('/signup')
 
+      const isProtectedRoute = protectedRoutes.some(prefix =>
+        nextUrl.pathname.startsWith(prefix)
+      )
+
       if (isLoggedIn) {
         if (isOnLoginPage || isOnSignupPage) {
           return Response.redirect(new URL('/', nextUrl))
         }
+      } else if (isProtectedRoute) {
+        return Response.redirect(new URL('/login', nextUrl))
       }
 
       return true
