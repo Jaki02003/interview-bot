@@ -124,7 +124,7 @@ async function confirmPurchase(symbol: string, price: number, amount: number) {
 async function submitUserMessage(content: string) {
   'use server'
 
-  const aiState = getMutableAIState<typeof AI>()
+  const aiState: any = getMutableAIState<typeof AI>()
 
   aiState.update({
     ...aiState.get(),
@@ -267,7 +267,7 @@ async function submitUserMessage(content: string) {
       }
 
       return textNode
-    },
+    }
     // functions: {
     //   listStocks: {
     //     description: 'List three imaginary stocks that are trending.',
@@ -328,20 +328,20 @@ async function submitUserMessage(content: string) {
     //         </BotCard>
     //       )
 
-          // await sleep(1000)
+    // await sleep(1000)
 
-          // aiState.done({
-          //   ...aiState.get(),
-          //   messages: [
-          //     ...aiState.get().messages,
-          //     {
-          //       id: nanoid(),
-          //       role: 'function',
-          //       name: 'showStockPrice',
-          //       content: JSON.stringify({ symbol, price, delta })
-          //     }
-          //   ]
-          // })
+    // aiState.done({
+    //   ...aiState.get(),
+    //   messages: [
+    //     ...aiState.get().messages,
+    //     {
+    //       id: nanoid(),
+    //       role: 'function',
+    //       name: 'showStockPrice',
+    //       content: JSON.stringify({ symbol, price, delta })
+    //     }
+    //   ]
+    // })
 
     //       return (
     //         <BotCard>
@@ -490,7 +490,8 @@ export const AI = createAI<AIState, UIState>({
   },
   initialUIState: [],
   initialAIState: { chatId: nanoid(), messages: [] },
-  unstable_onGetUIState: async () => {
+
+  onGetUIState: async () => {
     'use server'
 
     const session = await auth()
@@ -506,7 +507,7 @@ export const AI = createAI<AIState, UIState>({
       return
     }
   },
-  unstable_onSetAIState: async ({ state, done }) => {
+  onSetAIState: async ({ state, done }: any) => {
     'use server'
 
     const session = await auth()
