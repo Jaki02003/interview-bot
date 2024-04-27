@@ -1,7 +1,5 @@
 import type { NextAuthConfig } from 'next-auth'
 
-const protectedRoutes = ['/', '/new']
-
 export const authConfig = {
   secret: process.env.AUTH_SECRET,
   pages: {
@@ -9,24 +7,10 @@ export const authConfig = {
     newUser: '/signup'
   },
   callbacks: {
-    async authorized({ auth, request: { nextUrl } }) {
-      const isLoggedIn = !!auth?.user
-      const isOnLoginPage = nextUrl.pathname.startsWith('/login')
-      const isOnSignupPage = nextUrl.pathname.startsWith('/signup')
+    async authorized({ auth }) {
+      const isAuthenticated = !!auth?.user
 
-      const isProtectedRoute = protectedRoutes.some(prefix =>
-        nextUrl.pathname.startsWith(prefix)
-      )
-
-      if (isLoggedIn) {
-        if (isOnLoginPage || isOnSignupPage) {
-          return Response.redirect(new URL('/', nextUrl))
-        }
-      } else if (isProtectedRoute) {
-        return Response.redirect(new URL('/login', nextUrl))
-      }
-
-      return true
+      return isAuthenticated
     },
     async jwt({ token, user }) {
       if (user) {

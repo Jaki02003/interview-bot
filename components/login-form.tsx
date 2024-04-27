@@ -19,7 +19,7 @@ export default function LoginForm() {
         toast.error(getMessageFromCode(result.resultCode))
       } else {
         toast.success(getMessageFromCode(result.resultCode))
-        router.refresh()
+        router.replace('/')
       }
     }
   }, [result, router])
