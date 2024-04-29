@@ -491,7 +491,7 @@ export const AI = createAI<AIState, UIState>({
   initialUIState: [],
   initialAIState: { chatId: nanoid(), messages: [] },
 
-  onGetUIState: async () => {
+  unstable_onGetUIState: async () => {
     'use server'
 
     const session = await auth()
@@ -507,7 +507,7 @@ export const AI = createAI<AIState, UIState>({
       return
     }
   },
-  onSetAIState: async ({ state, done }: any) => {
+  unstable_onSetAIState: async ({ state, done }: any) => {
     'use server'
 
     const session = await auth()
