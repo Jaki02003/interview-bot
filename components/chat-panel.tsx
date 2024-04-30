@@ -49,7 +49,7 @@ export function ChatPanel({
     {
       heading: 'Click Here',
       subheading: ' Product Analyst Interview',
-      message: 'Ready to tackle Product management in the interview'
+      message: 'Ready to tackle Interview for Product Analyst'
     }
     // {
     //   heading: 'Eager to discover',
