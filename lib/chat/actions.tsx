@@ -171,6 +171,13 @@ async function submitUserMessage(content: string) {
           1. Conduct user interviews to gather feedback on a new feature, prioritizing insights that align with the product vision and user needs while identifying opportunities for innovation.
           2. Create a product roadmap based on market analysis and user feedback, emphasizing iterative development cycles and continuous improvement to deliver value to customers.
           3. Analyze competitor products and market trends to identify potential gaps and opportunities for differentiation, informing strategic decisions for product development and positioning.
+          4. Imagine yourself working as the product analyst of one of our products that keeps a record of the visitors coming in and out of an organization. 
+             You have been given the responsibility of managing the upcoming deliverables and prioritizing the tasks for the engineering team. 
+             The Sales team comes up to you with a new requirement that some potential customers are looking for.
+             However, you are already on day 4 of a 10-day sprint where you are developing an enhancement which is expected to improve the user experience for your existing customers. How would you prioritize the tasks and manage the situation?
+          5. Take one of your favorite products from the global market and describe why you consider it as a well established product. If you were given the opportunity to make one change to the product, what would it be and why would you choose this?
+          6. One of the products that you’re working on recently launched a major feature. The users however, are reporting new bugs and issues more than before. 
+             How would you investigate and prioritize these issues to address the situation?
       
         - Technical Aptitude:
           1. Demonstrate proficiency in version control using Git and GitHub, showcasing knowledge of branching strategies and collaboration workflows.
