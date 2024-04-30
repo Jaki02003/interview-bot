@@ -35,26 +35,26 @@ export function ChatPanel({
   const [shareDialogOpen, setShareDialogOpen] = React.useState(false)
 
   const exampleMessages = [
-    {
-      heading: 'Ready to dive into',
-      subheading: ' JavaScript for the interview',
-      message: 'Ready to dive into JavaScript for the interview'
-    },
-    {
-      heading: 'Set for a',
-      subheading: ' Golang interview adventure',
-      message: 'Set for a Golang interview adventure'
-    },
+    // {
+    //   heading: 'Ready to dive into',
+    //   subheading: ' JavaScript for the interview',
+    //   message: 'Ready to dive into JavaScript for the interview'
+    // },
+    // {
+    //   heading: 'Set for a',
+    //   subheading: ' Golang interview adventure',
+    //   message: 'Set for a Golang interview adventure'
+    // },
     {
       heading: 'Ready to tackle',
       subheading: ' Product management in the interview',
       message: 'Ready to tackle Product management in the interview'
-    },
-    {
-      heading: 'Eager to discover',
-      subheading: ' Python in the interview',
-      message: 'Eager to discover Python in the interview'
     }
+    // {
+    //   heading: 'Eager to discover',
+    //   subheading: ' Python in the interview',
+    //   message: 'Eager to discover Python in the interview'
+    // }
   ]
 
   return (
@@ -65,7 +65,7 @@ export function ChatPanel({
       />
 
       <div className="mx-auto sm:max-w-2xl sm:px-4">
-        <div className="mb-4 grid grid-cols-2 gap-2 px-4 sm:px-0">
+        <div className="mb-4 grid grid-cols-1 gap-2 px-4 sm:px-0">
           {messages.length === 0 &&
             exampleMessages.map((example, index) => (
               <div

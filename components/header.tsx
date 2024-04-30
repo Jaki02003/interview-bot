@@ -15,11 +15,21 @@ import { SidebarMobile } from './sidebar-mobile'
 import { SidebarToggle } from './sidebar-toggle'
 import { ChatHistory } from './chat-history'
 import { Session } from '@/lib/types'
+import Image from 'next/image'
 
 async function UserOrLogin() {
   const session = (await auth()) as Session
   return (
     <>
+      <div>
+        <Image
+          src={'/vivasoft-logo.jpg'}
+          alt="vivasoft logo"
+          height={18}
+          width={32}
+          className="mr-5"
+        />
+      </div>
       {session?.user ? (
         <>
           <SidebarMobile>
@@ -33,6 +43,7 @@ async function UserOrLogin() {
           <IconNextChat className="hidden size-6 mr-2 dark:block" />
         </Link>
       )}
+
       <div className="flex items-center">
         <IconSeparator className="size-6 text-muted-foreground/50" />
         {session?.user ? (

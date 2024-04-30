@@ -24,10 +24,12 @@ export function EmptyScreen() {
     <div className="mx-auto max-w-2xl px-4">
       <div className="flex flex-col gap-2 rounded-lg border bg-background p-8">
         <h1 className="text-lg font-semibold">
-        Welcome to our Software Engineer Interview Chatbot!
+          Welcome to our Product Interview Chatbot.
         </h1>
-        <p className="leading-normal text-muted-foreground">
-        This chatbot is designed to facilitate software engineer interviews seamlessly. It leverages advanced AI capabilities to engage candidates in technical discussions and problem-solving scenarios. Built using {' '}
+        {/* <p className="leading-normal text-muted-foreground">
+          This chatbot is designed to facilitate software engineer interviews
+          seamlessly. It leverages advanced AI capabilities to engage candidates
+          in technical discussions and problem-solving scenarios. Built using{' '}
           <ExternalLink href="https://nextjs.org">Next.js</ExternalLink>, the{' '}
           <ExternalLink href="https://sdk.vercel.ai">
             Vercel AI SDK
@@ -37,7 +39,7 @@ export function EmptyScreen() {
             Vercel KV
           </ExternalLink>
           .
-        </p>
+        </p> */}
         {/* <p className="leading-normal text-muted-foreground">
           It uses{' '}
           <ExternalLink href="https://vercel.com/blog/ai-sdk-3-generative-ui">
