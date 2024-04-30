@@ -19,7 +19,7 @@ export default function SignupForm() {
         toast.error(getMessageFromCode(result.resultCode))
       } else {
         toast.success(getMessageFromCode(result.resultCode))
-        router.refresh()
+        router.push('/login')
       }
     }
   }, [result, router])

@@ -10,8 +10,10 @@ export default auth(req => {
   const isAuthenticated = !!req.auth
 
   const isProtectedRoute = PROTECTED_ROUTES.includes(nextUrl.pathname)
-  const isAuthPage =
-    nextUrl.pathname === '/login' || nextUrl.pathname === '/signup'
+  // const isAuthPage =
+  //   nextUrl.pathname === '/login' || nextUrl.pathname === '/signup'
+
+  const isAuthPage = false
 
   if (!isAuthenticated && isProtectedRoute) {
     return Response.redirect(new URL('/login', nextUrl))
